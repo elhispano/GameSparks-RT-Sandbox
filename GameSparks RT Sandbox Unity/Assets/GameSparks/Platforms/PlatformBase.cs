@@ -415,10 +415,6 @@ namespace GameSparks.Platforms
                     case RuntimePlatform.SamsungTVPlayer:
                         return "SAMSUNGTV";
 #endif
-
-                    case RuntimePlatform.WiiU:
-                        return "WIIU";
-
                     case RuntimePlatform.tvOS:
                         return "TVOS";
 
