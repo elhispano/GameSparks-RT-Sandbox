@@ -22,12 +22,25 @@ public class LoginPanel : MonoBehaviour
 
 	[SerializeField]
 	private Button m_loginButton;
+	
+	[SerializeField]
+	private Button m_findMatchButton;
 
 	[SerializeField]  
 	private Text m_loginStatus;
 
 	[SerializeField]
 	private GameObject m_loginPanel = null;
+	
+	[SerializeField]
+	private GameObject m_matchesPanel = null;
+	
+	#region Unity Methods
+
+	void Awake()
+	{
+		
+	}
 
 	void OnEnable()
 	{
@@ -38,6 +51,10 @@ public class LoginPanel : MonoBehaviour
 	{
 		GS.GameSparksAvailable -= GameSparksAvailable;
 	}
+	
+	#endregion
+	
+	#region Class Methods
 
 	void TryAutoLogin()
 	{
@@ -53,6 +70,24 @@ public class LoginPanel : MonoBehaviour
 		}
 	}
 	
+	#endregion
+
+	#region UI Methods
+
+	private void ToggleLogin(bool toggle)
+	{
+		m_loginPanel.SetActive(toggle);
+		m_loginButton.gameObject.SetActive(toggle);
+	}
+	
+	private void ToggleFindMatch(bool toggle)
+	{
+		m_matchesPanel.gameObject.SetActive(toggle);
+		m_findMatchButton.gameObject.SetActive(toggle);
+	}
+
+	#endregion
+
 	#region Unity UI Inspector Events
 
 	public void LoginButton()
@@ -62,7 +97,7 @@ public class LoginPanel : MonoBehaviour
 			UserRegisteredCallback,
 			UserLoggedCallback);
 	}
-	
+
 	#endregion
 
 	#region Handlers
@@ -90,16 +125,6 @@ public class LoginPanel : MonoBehaviour
 		
 		m_userId.text = response.UserId;
 		UpdateStatus();
-	}
-
-	#endregion
-
-	#region UI Methods
-
-	private void ToggleLogin(bool toggle)
-	{
-		m_loginPanel.SetActive(toggle);
-		m_loginButton.gameObject.SetActive(toggle);
 	}
 
 	#endregion
