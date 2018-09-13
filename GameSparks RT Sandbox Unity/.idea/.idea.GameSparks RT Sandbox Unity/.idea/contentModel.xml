@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\elhis\.Rider2018.2\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\elhis\.Rider2018.2\system\resharper-host\Local\Transient\ReSharperHost\v182\SolutionCaches\_GameSparks RT Sandbox Unity.-531176989.00" t="ExcludeRecursive" />
+    <e p="C:\Users\elhis\Documents\GIT Projects\GameSparks-RT-Sandbox\GameSparks RT Sandbox Unity" t="IncludeRecursive">
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Code" t="Include">
+          <e p="GeneralMenuItems.cs" t="Include" />
+          <e p="LoginPanel.cs" t="Include" />
+          <e p="MyGameSparksManager.cs" t="Include" />
+        </e>
+        <e p="GameSparks" t="Include">
+          <e p="Editor" t="Include">
+            <e p="GameSparksEditorFormUpload.cs" t="Include" />
+            <e p="GameSparksPopUp.cs" t="Include" />
+            <e p="GameSparksRestApi.cs" t="Include" />
+            <e p="GameSparksRestWindow.cs" t="Include" />
+            <e p="GameSparksSettingsEditor.cs" t="Include" />
+            <e p="GameSparksUnityInspector.cs" t="Include" />
+          </e>
+          <e p="GameSparksRTUnity.cs" t="Include" />
+          <e p="GameSparksSettings.cs" t="Include" />
+          <e p="GameSparksUnity.cs" t="Include" />
+          <e p="link.xml" t="Include" />
+          <e p="Platforms" t="Include">
+            <e p="DefaultPlatform.cs" t="Include" />
+            <e p="IControlledTimer.cs" t="Include" />
+            <e p="IControlledWebSocket.cs" t="Include" />
+            <e p="Native" t="Include">
+              <e p="detail" t="Include">
+                <e p="GameSparksNative.cs" t="Include" />
+                <e p="GameSparksNativePINVOKE.cs" t="Include" />
+                <e p="NativeWebSocket.cs" t="Include" />
+              </e>
+              <e p="NativePlatform.cs" t="Include" />
+              <e p="NativeWebSocket.cs" t="Include" />
+            </e>
+            <e p="PlatformBase.cs" t="Include" />
+            <e p="TimerController.cs" t="Include" />
+            <e p="UnityTimer.cs" t="Include" />
+            <e p="WebGL" t="Include">
+              <e p="SimpleJson2.cs" t="Include" />
+              <e p="WebGLPlatform.cs" t="Include" />
+              <e p="WebGLWebSocket.cs" t="Include" />
+            </e>
+            <e p="WebSocketController.cs" t="Include" />
+          </e>
+          <e p="Plugins" t="Include">
+            <e p="GameSparksRT.xml" t="Include" />
+            <e p="Metro" t="Include">
+              <e p="GameSparksRT.xml" t="Include" />
+            </e>
+          </e>
+          <e p="README.txt" t="Include" />
+          <e p="TestUI" t="Include">
+            <e p="GameSparksTestUI.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="GameSparks RT Sandbox Unity.sln" t="IncludeFlat" />
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>

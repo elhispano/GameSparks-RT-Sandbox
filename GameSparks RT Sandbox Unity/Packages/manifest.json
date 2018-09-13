@@ -1,4 +1,5 @@
 {
-	"dependencies": {
-	}
+  "dependencies": {
+    "com.unity.burst": "0.2.4-preview.20"
+  }
 }
