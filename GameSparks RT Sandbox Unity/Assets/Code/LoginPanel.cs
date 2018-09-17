@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.Remoting.Messaging;
 using System.Text;
 using GameSparks.Api.Responses;
 using GameSparks.Api.Messages;
@@ -12,8 +13,10 @@ using UnityEngine.UI;
 public class LoginPanel : MonoBehaviour
 {
 	private const string  USERNAME_PPREFS_KEY = "UserName";
-	private const string  PASSWORD_PPREFS_KEY = "Password";
+	private const string PASSWORD_PPREFS_KEY = "Password";
 	
+	[Header("Health Settings")]
+		
 	[SerializeField]
 	private InputField m_userId;
 	
@@ -22,12 +25,19 @@ public class LoginPanel : MonoBehaviour
 	
 	[SerializeField]
 	private InputField m_password;
+	
+	[Header("Buttons")]
 
 	[SerializeField]
 	private Button m_loginButton;
 	
 	[SerializeField]
 	private Button m_findMatchButton;
+	
+	[SerializeField]
+	private Button m_startMatchButton;
+	
+	[Header("Texts")]
 
 	[SerializeField]  
 	private Text m_loginStatus;
@@ -41,11 +51,18 @@ public class LoginPanel : MonoBehaviour
 	[SerializeField]
 	private GameObject m_matchesPanel = null;
 	
+	#region Private Vars
+
+	private RTSession m_rtSession;
+	
+	#endregion
+	
 	#region Unity Methods
 
 	void Awake()
 	{
 		ToggleFindMatch(false);
+		ToggleStartMatch(false);
 	}
 
 	void OnEnable()
@@ -72,12 +89,35 @@ public class LoginPanel : MonoBehaviour
 		{
 			string userName = PlayerPrefs.GetString(USERNAME_PPREFS_KEY);
 			string password = PlayerPrefs.GetString(PASSWORD_PPREFS_KEY);
+
+			if (string.IsNullOrEmpty(userName) || string.IsNullOrEmpty(password))
+			{
+				return;
+			}
 			
 			MyGameSparksManager.Instance().AuthenticateUser(userName,
 				password,
 				UserRegisteredCallback,
 				UserLoggedCallback);
 		}
+	}
+
+	public void UserLoggedSuccesfully(string userId)
+	{
+		string userName = m_userName.text;
+		string password = m_password.text;
+
+		if (!string.IsNullOrEmpty(userName) && !string.IsNullOrEmpty(password))
+		{
+			PlayerPrefs.SetString(USERNAME_PPREFS_KEY,userName);	
+			PlayerPrefs.SetString(PASSWORD_PPREFS_KEY,password);
+			PlayerPrefs.Save();
+		}
+
+		m_userId.text = userId;
+		UpdateStatus();
+		ToggleLogin(false);
+		ToggleFindMatch(true);
 	}
 	
 	#endregion
@@ -94,6 +134,12 @@ public class LoginPanel : MonoBehaviour
 	{
 		m_matchesPanel.gameObject.SetActive(toggle);
 		m_findMatchButton.gameObject.SetActive(toggle);
+	}
+	
+	private void ToggleStartMatch(bool toggle)
+	{
+		m_startMatchButton.gameObject.SetActive(toggle);
+		m_findMatchButton.gameObject.SetActive(!toggle);
 	}
 
 	#endregion
@@ -113,6 +159,11 @@ public class LoginPanel : MonoBehaviour
 		MyGameSparksManager.Instance().FindPlayers();
 		m_playerList.text = "Searching for players...";
 	}
+	
+	public void StartMatch()
+	{
+		MyGameSparksManager.Instance().StartNewRealTimeSession(m_rtSession);
+	}
 
 	#endregion
 
@@ -126,29 +177,23 @@ public class LoginPanel : MonoBehaviour
 
 	private void UserRegisteredCallback(RegistrationResponse response)
 	{
-		m_userId.text = response.UserId;
-		m_loginStatus.text = "New user created";
-		UpdateStatus();
-		ToggleLogin(false);
-		ToggleFindMatch(true);
+		if (!response.HasErrors)
+		{
+			UserLoggedSuccesfully(response.UserId);
+		}
 	}
 
 	private void UserLoggedCallback(AuthenticationResponse response)
 	{
 		if (!response.HasErrors)
 		{
-			PlayerPrefs.SetString(USERNAME_PPREFS_KEY,m_userName.text);	
-			PlayerPrefs.SetString(PASSWORD_PPREFS_KEY,m_password.text);	
+			UserLoggedSuccesfully(response.UserId);
 		}
-		
-		m_userId.text = response.UserId;
-		UpdateStatus();
-		ToggleLogin(false);
-		ToggleFindMatch(true);
 	}
 	
 	private void OnMatchFoundFailed(MatchNotFoundMessage message)
 	{
+		ToggleFindMatch(true);
 		m_playerList.text = "Error finding a match";
 	}
 
@@ -168,6 +213,9 @@ public class LoginPanel : MonoBehaviour
 			sBuilder.AppendLine ("Player:"+player.PeerId+" User Name:"+player.DisplayName); // add the player number and the display name to the list
 		}
 		m_playerList.text = sBuilder.ToString (); // set the string to be the player-list field
+		
+		m_rtSession = new RTSession(message);
+		ToggleStartMatch(true);
 	}
 
 	#endregion
@@ -182,7 +230,7 @@ public class LoginPanel : MonoBehaviour
 		{
 			m_loginStatus.text = "GS Available";
 
-			if (GS.Authenticated)
+			if (!string.IsNullOrEmpty(GS.GSPlatform.UserId))
 			{
 				m_loginStatus.text = "User Logged";
 			}

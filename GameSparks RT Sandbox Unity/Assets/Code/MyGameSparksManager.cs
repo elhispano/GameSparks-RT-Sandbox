@@ -2,13 +2,20 @@
 using System.Collections.Generic;
 using System.Reflection.Emit;
 using GameSparks.Api.Responses;
+using GameSparks.Core;
+using GameSparks.RT;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MyGameSparksManager : MonoBehaviour
 {
 	private const string MATCHMAKING_CODE = "RealTimeMatch";
 	
 	private static MyGameSparksManager instance = null;
+
+	private GameSparksRTUnity gameSparksRTUnity;
+
+	private RTSession m_RTSession;
 
 	public static MyGameSparksManager Instance()
 	{
@@ -28,7 +35,7 @@ public class MyGameSparksManager : MonoBehaviour
 	void Awake()
 	{
 		instance = this; 
-		DontDestroyOnLoad(this.gameObject); 
+		DontDestroyOnLoad(this.gameObject);
 	}
 	
 	#region Login & Registration
@@ -43,6 +50,9 @@ public class MyGameSparksManager : MonoBehaviour
 	/// <param name="_callback2">Registration-Response</param>
 	public void AuthenticateUser (string _userName, string _password, RegCallback _regcallback, AuthCallback _authcallback)
 	{
+	
+		Debug.Log("AuthenticateUser "+_userName+ " "+_password);
+		
 	  new GameSparks.Api.Requests.RegistrationRequest()
 	  // this login method first attempts a registration //
 	  // if the player is not new, we will be able to tell as the registrationResponse has a bool 'NewPlayer' which we can check
@@ -99,6 +109,57 @@ public class MyGameSparksManager : MonoBehaviour
 					Debug.LogError("GSM| MatchMaking Error \n" + response.Errors.JSON);
 				}
 			});
+	}
+
+	#endregion
+	
+	#region Realtime
+
+	public void StartNewRealTimeSession(RTSession session)
+	{
+		m_RTSession = session;
+		gameSparksRTUnity = gameObject.AddComponent<GameSparksRTUnity>();
+
+		GSRequestData mockedResponse = new GSRequestData()
+			.AddNumber("port", (double) session.GetPortId())
+			.AddString("host", session.GetHostUrl())
+			.AddString("accessToken", session.GetAccessToken());
+		
+		FindMatchResponse response = new FindMatchResponse(mockedResponse);
+		
+		
+		gameSparksRTUnity.Configure(response,
+			OnPlayerConnect,
+			OnPlayerDisconnect,
+			OnReady,
+			OnPacket);
+		
+		gameSparksRTUnity.Connect();
+	}
+
+	private void OnPacket(RTPacket rtPacket)
+	{
+		
+	}
+
+	private void OnReady(bool isReady)
+	{
+		Debug.Log ("GSM| Player IsReady, "+isReady);
+
+		if (isReady)
+		{
+			SceneManager.LoadScene("GameScene");
+		}
+	}
+
+	private void OnPlayerDisconnect(int peerId)
+	{
+		Debug.Log ("GSM| Player Disconnected, "+peerId);	
+	}
+
+	private void OnPlayerConnect(int peerId)
+	{
+		Debug.Log ("GSM| Player Connected, "+peerId);
 	}
 
 	#endregion
