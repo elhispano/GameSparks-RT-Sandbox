@@ -4,13 +4,579 @@
     <option name="SCOPE_TYPE" value="3" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a99d2a3c-bae5-431a-aa5f-5c7baf46e98c" name="Default Changelist" comment="">
+    <list default="true" id="a99d2a3c-bae5-431a-aa5f-5c7baf46e98c" name="Default Changelist" comment="WIP with character instantiation">
+      <change afterPath="$PROJECT_DIR$/Assets/Data.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/Animations.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/Animations/Gunplay.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Data/Animations/Gunplay.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Gizmos.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Gizmos/Cinemachine.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Gizmos/Cinemachine/cm_logo_lg.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/ThirdPersonCharacterGuidelines.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/CubePrototype08x08x08.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/CubePrototype08x08x08.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype04x01x04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype04x01x04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype08x01x08.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype08x01x08.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype64x01x64.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/FloorPrototype64x01x64.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/HousePrototype16x16x24.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/HousePrototype16x16x24.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/JoinInnerPrototype01x06x01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/JoinInnerPrototype01x06x01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/JoinMidPrototype04x06x01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/JoinMidPrototype04x06x01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/JoinOuterPrototype02x06x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/JoinOuterPrototype02x06x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PickupPrototype.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PickupPrototype.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PillarPrototype01x02x01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PillarPrototype01x02x01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PillarPrototype02x08x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PillarPrototype02x08x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype02x01x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype02x01x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype04x01x04.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype04x01x04.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype08x01x08.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/PlatformPrototype08x01x08.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/RampPrototype04x02x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/RampPrototype04x02x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/StepsPrototype04x02x02.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/StepsPrototype04x02x02.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/WallPrototype08x08x01.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Prefabs/WallPrototype08x08x01.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Shaders/WorldCoordDiffuse.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Shaders/WorldCoordDiffuse.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/GridEmissive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/GridEmissive.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchMauveAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchMauveAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchNavyAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchNavyAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchNavyDarkAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchNavyDarkAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchOrangeAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchOrangeAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchPinkDAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchPinkDAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchTealAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchTealAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchTurquoiseAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchTurquoiseAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchWhiteAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchWhiteAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchYellowAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Prototyping/Textures/SwatchYellowAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/AudioMixers.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/AudioMixers/Car.mixer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/AudioMixers/Car.mixer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/AudioMixers/JetPlane.mixer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/AudioMixers/JetPlane.mixer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/AudioMixers/PropellerPlane.mixer" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/AudioMixers/PropellerPlane.mixer.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/MauveSmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/MauveSmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/NavyDarkGrid.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/NavyDarkGrid.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/NavyDarkSmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/NavyDarkSmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/NavyGrid.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/NavyGrid.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/NavySmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/NavySmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/OrangeSmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/OrangeSmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/ParticleClouds.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/ParticleClouds.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/PinkSmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/PinkSmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/PinkUnlit.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/PinkUnlit.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/SkyboxProcedural.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/SkyboxProcedural.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/TealSmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/TealSmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/TurquoiseSmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/TurquoiseSmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/WhiteSmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/WhiteSmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/WhiteUnlit.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/WhiteUnlit.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/YellowSmooth.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Materials/YellowSmooth.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs/EventSystem.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs/EventSystem.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs/MainMenuLoader.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs/MainMenuLoader.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs/MainMenuUI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs/MainMenuUI.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs/NetworkGameMenuUI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs/NetworkGameMenuUI.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs/NetworkScoreBarUI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Prefabs/NetworkScoreBarUI.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Scripts/MenuSceneLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Scripts/MenuSceneLoader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Scripts/PauseMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Scripts/PauseMenu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Scripts/SceneAndURLLoader.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Sprites.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Sprites/LogoUnitySprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Sprites/LogoUnitySprite.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Sprites/MenuCornerTopRightSprite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Menu/Sprites/MenuCornerTopRightSprite.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Brick.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Brick.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Cube.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Cube.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/GoalPosts.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/GoalPosts.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/GroundObstacles.FBX" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/GroundObstacles.FBX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/GroundRunway.FBX" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/GroundRunway.FBX.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/GroundTrack.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/GroundTrack.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/LaserBolt.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/LaserBolt.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Loop.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Loop.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Materials/Asteroid.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Materials/Asteroid.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Materials/SpaceshipGlow.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Materials/SpaceshipGlow.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Materials/SpaceshipHull.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Materials/SpaceshipHull.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/MiniRamps.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/MiniRamps.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Pickup.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Pickup.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Pillar.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Pillar.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Platform.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Platform.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Platforms.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Platforms.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/PrimaryJumpRamp.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/PrimaryJumpRamp.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/RampElevated.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/RampElevated.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Ring.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Models/Ring.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Navmesh.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Navmesh/CarAI.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Navmesh/CarAI.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Navmesh/CharacterThirdPersonAI.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Navmesh/CharacterThirdPersonAI.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Box.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Box.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/BoxPile.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/BoxPile.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/BoxSmall.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/BoxSmall.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/CameraSwitch.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/CameraSwitch.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/CameraSwitchUI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/CameraSwitchUI.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/GoalPosts.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/GoalPosts.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/GroundArena.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/GroundArena.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/GroundObstacles.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/GroundObstacles.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/GroundRunway.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/GroundRunway.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/GroundTrack.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/GroundTrack.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/House.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/House.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/LevelResetUI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/LevelResetUI.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Loop.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Loop.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/MobileShaderReplacements.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/MobileShaderReplacements.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Pickup.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Pickup.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Pillar.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Pillar.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/ResetterUI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/ResetterUI.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Ring.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Ring.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Sea.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Sea.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/SmashBoxes.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/SmashBoxes.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Wall.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Prefabs/Wall.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/2dCharacter.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/2dCharacter.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/AircraftJet2Axis.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/AircraftJet2Axis.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/AircraftJetAI.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/AircraftJetAI.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/AircraftPropeller4Axis.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/AircraftPropeller4Axis.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/AircraftPropellerAI.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/AircraftPropellerAI.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/Car.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/Car.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CarAIWaypointBased.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CarAIWaypointBased.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CharacterFirstPerson.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CharacterFirstPerson.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CharacterThirdPerson.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CharacterThirdPerson.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CharacterThirdPersonAI.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CharacterThirdPersonAI.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CharacterThirdPersonAI.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CharacterThirdPersonAI/NavMesh.asset" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/CharacterThirdPersonAI/NavMesh.asset.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/Particles.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/Particles.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/RollerBall.unity" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scenes/RollerBall.unity.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts/CameraSwitch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts/CameraSwitch.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts/LevelReset.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts/LevelReset.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts/ParticleSceneControls.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts/ParticleSceneControls.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts/PlaceTargetWithMouse.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts/PlaceTargetWithMouse.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts/SlowMoButton.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Scripts/SlowMoButton.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Shaders/Skybox-Procedural.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Shaders/Skybox-Procedural.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/ChevronAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/ChevronAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/FlyerAsteroidEmissive.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/FlyerAsteroidEmissive.tif.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/FlyerPlayershipAlbedo.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/FlyerPlayershipAlbedo.tif.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/FlyerPlayershipEmission.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/FlyerPlayershipEmission.tif.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/FlyerPlayershipOcclusion.tif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/FlyerPlayershipOcclusion.tif.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIButtonEmpty.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIButtonEmpty.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIButtonReset.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIButtonReset.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIButtonRun.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIButtonRun.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIButtonSwitchLeft.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIButtonSwitchLeft.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIButtonSwitchRight.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIButtonSwitchRight.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUICameraCycle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUICameraCycle.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUICameraCycleDown.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUICameraCycleDown.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIReticle.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUIReticle.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUITimescaleFull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUITimescaleFull.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUITimescaleSlow.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GUITimescaleSlow.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GridEmissive.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/GridEmissive.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchMauveAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchMauveAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchNavyAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchNavyAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchNavyDarkAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchNavyDarkAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchOrangeAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchOrangeAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchPinkAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchPinkAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchTealAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchTealAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchTurquoiseAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchTurquoiseAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchWhiteAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchWhiteAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchYellowAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/SampleScenes/Textures/SwatchYellowAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/ActivateTrigger.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/ActivateTrigger.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/AlphaButtonClickMask.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/AlphaButtonClickMask.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/AutoMobileShaderSwitch.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/AutoMobileShaderSwitch.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/AutoMoveAndRotate.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/AutoMoveAndRotate.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/CameraRefocus.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/CameraRefocus.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/CurveControlledBob.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/CurveControlledBob.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/DragRigidbody.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/DragRigidbody.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/DynamicShadowSettings.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/DynamicShadowSettings.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/EventSystemChecker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/EventSystemChecker.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/FOVKick.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/FOVKick.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/FPSCounter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/FPSCounter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/FollowTarget.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/FollowTarget.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/ForcedReset.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/ForcedReset.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/LerpControlledBob.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/LerpControlledBob.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/ObjectResetter.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/ObjectResetter.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/ParticleSystemDestroyer.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/ParticleSystemDestroyer.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/PlatformSpecificContent.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/PlatformSpecificContent.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/Prefabs/FramerateCounter.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/Prefabs/FramerateCounter.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleActivatorMenu.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleMouseRotator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/SimpleMouseRotator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/SmoothFollow.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/SmoothFollow.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/TimedObjectActivator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/TimedObjectActivator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/TimedObjectDestructor.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/TimedObjectDestructor.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/WaypointCircuit.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/WaypointCircuit.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/WaypointProgressTracker.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Utility/WaypointProgressTracker.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/AircraftGuidelines.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/AircraftGuidelines.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/JetGearLower.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/JetGearLower.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/JetGearLowered.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/JetGearLowered.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/JetGearRaise.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/JetGearRaise.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/JetGearRaised.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/JetGearRaised.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/JetPlane.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/JetPlane.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/PropGearLower.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/PropGearLower.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/PropGearLowered.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/PropGearLowered.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/PropGearRaise.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/PropGearRaise.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/PropGearRaised.anim" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/PropGearRaised.anim.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/PropPlane.controller" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Animation/PropPlane.controller.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Audio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Audio/FlightWind.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Audio/FlightWind.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Audio/JetEngine.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Audio/JetEngine.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Audio/PropellerEngine.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Audio/PropellerEngine.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftFuselageGrey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftFuselageGrey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftFuselageWhite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftFuselageWhite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsJetGrey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsJetGrey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsJetWhite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsJetWhite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsPropellerBlurGrey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsPropellerBlurGrey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsPropellerBlurWhite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsPropellerBlurWhite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsPropellersGrey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsPropellersGrey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsPropellersWhite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/AircraftWingsPropellersWhite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/ParticleAfterburner.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/ParticleAfterburner.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/ParticleContrail.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/ParticleContrail.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/ParticleJetTrail.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Materials/ParticleJetTrail.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Models/AircraftFuselage.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Models/AircraftFuselage.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Models/AircraftWingsJet.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Models/AircraftWingsJet.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Models/AircraftWingsPropeller.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Models/AircraftWingsPropeller.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Prefabs/AircraftJet.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Prefabs/AircraftJet.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Prefabs/AircraftJetAI.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Prefabs/AircraftJetAI.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Prefabs/AircraftPropeller.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Prefabs/AircraftPropeller.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Prefabs/AircraftPropellerAi.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Prefabs/AircraftPropellerAi.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneAiControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneAiControl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneAudio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneAudio.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneControlSurfaceAnimator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneControlSurfaceAnimator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplanePropellerAnimator.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplanePropellerAnimator.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneUserControl2Axis.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneUserControl2Axis.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneUserControl4Axis.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/AeroplaneUserControl4Axis.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/JetParticleEffect.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/JetParticleEffect.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/LandingGear.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Scripts/LandingGear.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftFuselageNormals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftFuselageNormals.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftFuselageOcclusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftFuselageOcclusion.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur01GreyAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur01GreyAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur01WhiteAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur01WhiteAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur02GreyAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur02GreyAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur02WhiteAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur02WhiteAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur03GreyAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur03GreyAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur03WhiteAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftPropellerBlur03WhiteAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftWingsJetNormals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftWingsJetNormals.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftWingsJetOcclusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftWingsJetOcclusion.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftWingsPropellerNormals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftWingsPropellerNormals.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftWingsPropellerOcclusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Aircraft/Textures/AircraftWingsPropellerOcclusion.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio/AccelerationHigh.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio/AccelerationHigh.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio/AccelerationLow.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio/AccelerationLow.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio/DecelerationHigh.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio/DecelerationHigh.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio/DecelerationLow.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio/DecelerationLow.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio/Skid.wav" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Audio/Skid.wav.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/CarGuidelines.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/CarGuidelines.txt.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/ParticleBurnout.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/ParticleBurnout.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/ParticleSmokeWhite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/ParticleSmokeWhite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarBodyGrey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarBodyGrey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarBodyWhite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarBodyWhite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarLightCoversGrey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarLightCoversGrey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarLightCoversWhite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarLightCoversWhite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarLightGlows.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarLightGlows.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarWheelGrey.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarWheelGrey.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarWheelWhite.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/SkyCarWheelWhite.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/TrailSkid.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Materials/TrailSkid.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Models.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Models/SkyCar.fbx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Models/SkyCar.fbx.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Prefabs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Prefabs/Car.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Prefabs/Car.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Prefabs/CarWaypointBased.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Prefabs/CarWaypointBased.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Prefabs/SkidTrail.prefab" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Prefabs/SkidTrail.prefab.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/BrakeLight.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/BrakeLight.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarAIControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarAIControl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarAudio.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarAudio.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarController.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarSelfRighting.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarSelfRighting.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarUserControl.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/CarUserControl.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/Mudguard.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/Mudguard.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/SkidTrail.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/SkidTrail.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/Suspension.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/Suspension.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/WheelEffects.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Scripts/WheelEffects.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Shaders.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Shaders/DiffuseReflectiveShader.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Shaders/DiffuseReflectiveShader.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Shaders/ReflectiveDiffuseSpec.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Shaders/ReflectiveDiffuseSpec.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Shaders/ReflectiveDiffuseSpecTransp.shader" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Shaders/ReflectiveDiffuseSpecTransp.shader.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/ParticleCloudWhite.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/ParticleCloudWhite.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkidTrailAlbedo.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkidTrailAlbedo.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkyCarBodyNormals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkyCarBodyNormals.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkyCarBodyOcclusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkyCarBodyOcclusion.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkyCarLightsGlowAlpha.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkyCarLightsGlowAlpha.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkyCarWheelNormals.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkyCarWheelNormals.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkyCarWheelOcclusion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Standard Assets/Vehicles/Car/Textures/SkyCarWheelOcclusion.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameSparks RT Sandbox Unity/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameSparks RT Sandbox Unity/.idea/contentModel.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.GameSparks RT Sandbox Unity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.GameSparks RT Sandbox Unity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Code/LoginPanel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/LoginPanel.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Code/MyGameSparksManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Code/MyGameSparksManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/GameScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/Login Screen.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Login Screen.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -22,184 +588,75 @@
     <session id="-1764133225">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.5" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="cs" value="3021" />
-          <entry key="txt" value="21" />
+          <entry key="cs" value="4873" />
+          <entry key="txt" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="C#" value="3021" />
-          <entry key="PLAIN_TEXT" value="21" />
+          <entry key="C#" value="4873" />
+          <entry key="PLAIN_TEXT" value="53" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="21" />
+          <entry key="cs" value="30" />
+          <entry key="txt" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="21" />
+          <entry key="C#" value="30" />
+          <entry key="PLAIN_TEXT" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
     </session>
   </component>
+  <component name="FavoritesManager">
+    <favorites_list name="GameSparks RT Sandbox Unity" />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Code/LoginPanel.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Code/GameController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="141" column="54" selection-start-line="141" selection-start-column="54" selection-end-line="141" selection-end-column="54" />
+            <state relative-caret-position="171">
+              <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
               <folding>
-                <marker date="1537205708716" expanded="false" signature="6:298" ph="..." />
-                <marker date="1537205708716" expanded="true" signature="339:5303" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="1072:1139" ph="Private Vars" />
-                <marker date="1537205708716" expanded="true" signature="1143:1609" ph="Unity Methods" />
-                <marker date="1537205708716" expanded="true" signature="1179:1238" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="1256:1412" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="1439:1595" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="1613:2574" ph="Class Methods" />
-                <marker date="1537205708716" expanded="true" signature="1656:2118" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="1749:2115" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="1957:1979" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="2169:2560" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="2321:2465" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="2577:3036" ph="UI Methods" />
-                <marker date="1537205708716" expanded="true" signature="2635:2721" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="2766:2869" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="2915:3023" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="3039:3492" ph="Unity UI Inspector Events" />
-                <marker date="1537205708716" expanded="true" signature="3100:3244" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="3270:3374" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="3402:3479" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="3495:5042" ph="Handlers" />
-                <marker date="1537205708716" expanded="true" signature="3562:3604" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="3673:3757" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="3703:3754" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="3824:3908" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="3854:3905" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="3973:4051" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="4106:5029" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="4721:4867" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="5064:5301" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="5088:5140" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="5147:5298" ph="{...}" />
-                <marker date="1537205708716" expanded="true" signature="5244:5294" ph="{...}" />
+                <marker date="1537381804758" expanded="false" signature="6:78" ph="..." />
+                <marker date="1537381804758" expanded="true" signature="124:734" ph="{...}" />
+                <marker date="1537381804758" expanded="true" signature="250:409" ph="Unity" />
+                <marker date="1537381804758" expanded="true" signature="286:311" ph="{...}" />
+                <marker date="1537381804758" expanded="true" signature="334:343" ph="{...}" />
+                <marker date="1537381804758" expanded="true" signature="370:395" ph="{...}" />
+                <marker date="1537381804758" expanded="true" signature="413:732" ph="Public Interface" />
+                <marker date="1537381804758" expanded="true" signature="487:718" ph="{...}" />
+                <marker date="1537381804758" expanded="true" signature="493:715" ph="/* TODO: Use ObjectSpawner to create the player ... */" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/GameSparks/Platforms/PlatformBase.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Code/Survivor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="289" column="28" selection-start-line="289" selection-start-column="28" selection-end-line="289" selection-end-column="28" />
+            <state relative-caret-position="190">
+              <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
               <folding>
-                <marker date="1536867239477" expanded="false" signature="6:196" ph="..." />
-                <marker date="1536867239477" expanded="true" signature="228:14746" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="304:659" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="341:463" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="505:656" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="578:652" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="669:915" ph="/// This is the base class for all platform specific implementations. ... " />
-                <marker date="1536867239477" expanded="true" signature="997:14743" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="1236:8282" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="1724:2347" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="2174:2326" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="2364:2454" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="3080:6378" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="3268:3437" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="3588:3729" ph="/* } else { ... */" />
-                <marker date="1536867239477" expanded="true" signature="3878:4002" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="6142:6296" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="6917:7484" ph="/* Debug.Log (DeviceStats.GetString (&quot;manufacturer&quot;)); ... */" />
-                <marker date="1536867239477" expanded="true" signature="8396:8487" ph="/// Executes the given Action the on main thread of Unity. ... " />
-                <marker date="1536867239477" expanded="true" signature="8536:8591" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="8626:9162" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="8680:8753" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="8816:9158" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="8866:9122" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="8926:9116" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="8938:8960" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="8981:9109" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="9021:9062" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="9220:9449" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="9238:9293" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="9301:9445" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="9314:9342" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="9361:9440" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="9398:9434" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="9555:9648" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="9612:9644" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="10378:12198" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="10386:12194" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="10433:12189" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="12445:12607" ph="/// Allow for extra debug output. To set it use the GameSparksSettings editor window. &lt;see cref=&quot;GameSparksSettin ... " />
-                <marker date="1536867239477" expanded="true" signature="12677:12731" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="12683:12727" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="12759:12816" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="12765:12812" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="12848:12906" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="12854:12902" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="12933:13014" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="12939:13010" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="13126:13212" ph="/// Logs the given string to the Unity debug console. ... " />
-                <marker date="1536867239477" expanded="true" signature="13251:13507" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="13282:13501" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="13322:13496" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="13360:13409" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="13414:13490" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="13617:13817" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="13655:13813" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="13873:14067" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="13908:14057" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="14114:14135" ph="{...}" />
-                <marker date="1536867239477" expanded="true" signature="14139:14263" ph="/// Returns a (platform specific) timer implementation. ... " />
-                <marker date="1536867239477" expanded="true" signature="14314:14417" ph="/// Returns a hmac created with SHA-256 based on the given parameters. ... " />
-                <marker date="1536867239477" expanded="true" signature="14492:14594" ph="/// Creates a (platform specific) Websocket and returns the instance. ... " />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/79321FD2-AE8D-4D86-8C0D-2575F0D311F2/3f/a621aa0b/MatchFoundMessage.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Code/RTSession.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="38">
-              <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
-              <folding>
-                <marker date="1537201119952" expanded="true" signature="6:64" ph="..." />
-                <marker date="1537201119952" expanded="true" signature="88:1617" ph="{...}" />
-                <marker date="1537201119952" expanded="true" signature="329:495" ph="/// Creates a new RTSession object which is held until a new RT session is created ... " />
-                <marker date="1537201119952" expanded="true" signature="543:913" ph="{...}" />
-                <marker date="1537201119952" expanded="true" signature="945:983" ph="{...}" />
-                <marker date="1537201119952" expanded="true" signature="1019:1062" ph="{...}" />
-                <marker date="1537201119952" expanded="true" signature="1090:1127" ph="{...}" />
-                <marker date="1537201119952" expanded="true" signature="1159:1197" ph="{...}" />
-                <marker date="1537201119952" expanded="true" signature="1240:1281" ph="{...}" />
-                <marker date="1537201119952" expanded="true" signature="1308:1615" ph="{...}" />
-                <marker date="1537201119952" expanded="true" signature="1500:1609" ph="{...}" />
+                <marker date="1537380588221" expanded="false" signature="6:78" ph="..." />
+                <marker date="1537380588221" expanded="true" signature="117:322" ph="{...}" />
+                <marker date="1537380588221" expanded="true" signature="262:320" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -216,6 +673,8 @@
       <find>response</find>
       <find>PlayerPrefs</find>
       <find>StartNewRealTimeSession</find>
+      <find>single</find>
+      <find>SpawnPlayerCharacter</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -223,18 +682,25 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Code/CodeConventionForUnity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/GameController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/GeneralMenuItems.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/LoginPanel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameSparks/Editor/GameSparksSettingsEditor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/ObjectSpawner.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameSparks/TestUI/GameSparksTestUI.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E7C4767F-FE1D-4AB3-85BE-5B03702DBADC/da/307d29d2/RTPacket.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameSparks/Platforms/PlatformBase.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameSparks/Platforms/DefaultPlatform.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/RTSession.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/79321FD2-AE8D-4D86-8C0D-2575F0D311F2/3f/a621aa0b/MatchFoundMessage.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameSparks/GameSparksUnity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/OpCodes.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/GameSparks/GameSparksRTUnity.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/Survivor.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Code/MyGameSparksManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Code/PacketsProcessor.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -243,8 +709,13 @@
         <option value="$PROJECT_DIR$/Assets/GameSparks/Platforms/PlatformBase.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/GeneralMenuItems.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/RTSession.cs" />
-        <option value="$PROJECT_DIR$/Assets/Code/MyGameSparksManager.cs" />
         <option value="$PROJECT_DIR$/Assets/Code/LoginPanel.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/ObjectSpawner.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/PacketsProcessor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/OpCodes.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/MyGameSparksManager.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/Survivor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Code/GameController.cs" />
       </list>
     </option>
   </component>
@@ -260,18 +731,18 @@
     </navigator>
     <panes>
       <pane id="FileSystemExplorer" />
-      <pane id="UnityExplorer">
-        <option name="show-hidden-items" value="false" />
-      </pane>
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="UnityExplorer">
+        <option name="show-hidden-items" value="false" />
       </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="MyGam&#9;FILE&#9;file://C:/Users/elhis/Documents/GIT Projects/GameSparks-RT-Sandbox/GameSparks RT Sandbox Unity/Assets/Code/MyGameSparksManager.cs&#10;Codec&#9;FILE&#9;file://C:/Users/elhis/Documents/GIT Projects/GameSparks-RT-Sandbox/GameSparks RT Sandbox Unity/Assets/Code/CodeConventionForUnity.cs&#10;Platform&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="Survi&#9;null&#9;null&#10;Gamesparks&#9;FILE&#9;file://C:/Users/elhis/Documents/GIT Projects/GameSparks-RT-Sandbox/GameSparks RT Sandbox Unity/Assets/Code/MyGameSparksManager.cs&#10;processor&#9;null&#9;null&#10;MyGam&#9;FILE&#9;file://C:/Users/elhis/Documents/GIT Projects/GameSparks-RT-Sandbox/GameSparks RT Sandbox Unity/Assets/Code/MyGameSparksManager.cs&#10;Codec&#9;FILE&#9;file://C:/Users/elhis/Documents/GIT Projects/GameSparks-RT-Sandbox/GameSparks RT Sandbox Unity/Assets/Code/CodeConventionForUnity.cs&#10;Platform&#9;null&#9;null" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode.C#" />
   </component>
@@ -312,7 +783,8 @@
       <updated>1536858315351</updated>
       <workItem from="1536858318270" duration="7578000" />
       <workItem from="1536869770822" duration="878000" />
-      <workItem from="1537200417580" duration="5286000" />
+      <workItem from="1537200417580" duration="5878000" />
+      <workItem from="1537374468596" duration="4522000" />
     </task>
     <task id="LOCAL-00001" summary="WIP with find matches">
       <created>1536866529547</created>
@@ -325,9 +797,9 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13742000" />
+    <option name="totallyTimeSpent" value="18856000" />
   </component>
-  <component name="TodoView" selected-index="4">
+  <component name="TodoView">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -338,15 +810,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.4967462" weight="0.18603411" />
-      <window_info active="true" id="Structure" order="1" sideWeight="0.5032538" side_tool="true" visible="true" weight="0.18603411" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49566162" visible="true" weight="0.18603411" />
+      <window_info id="Structure" order="1" sideWeight="0.5043384" side_tool="true" weight="0.18603411" />
+      <window_info id="Favorites" order="2" sideWeight="0.5043384" side_tool="true" weight="0.18603411" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.329718" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.31561822" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.31561822" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.329718" />
@@ -442,11 +913,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="13" column="10" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-          <folding>
-            <marker date="1536867998789" expanded="false" signature="6:97" ph="..." />
-            <marker date="1536867998789" expanded="true" signature="144:287" ph="{...}" />
-            <marker date="1536867998789" expanded="true" signature="244:277" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -458,7 +924,6 @@
             <marker date="1536866046666" expanded="false" signature="6:114" ph="..." />
             <marker date="1536866046666" expanded="true" signature="141:1034" ph="/* Author: Adrian Mesa Pachon ... */" />
             <marker date="1536866046666" expanded="true" signature="1037:3096" ph="/* 7 - Variables conventions ... */" />
-            <marker date="1536866046666" expanded="true" signature="3124:70808" ph="{...}" />
             <marker date="1536866046666" expanded="true" signature="3167:67819" ph="{...}" />
             <marker date="1536866046666" expanded="true" signature="3182:3366" ph="/* ###################################################################################################################################### ... */" />
             <marker date="1536866046666" expanded="true" signature="3407:9323" ph="{...}" />
@@ -773,9 +1238,59 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E7C4767F-FE1D-4AB3-85BE-5B03702DBADC/da/307d29d2/RTPacket.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3">
+          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/LoginPanel.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret line="164" column="44" selection-start-line="164" selection-start-column="44" selection-end-line="164" selection-end-column="44" />
+          <folding>
+            <marker date="1537205708716" expanded="false" signature="6:298" ph="..." />
+            <marker date="1537205708716" expanded="true" signature="339:5303" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="1072:1139" ph="Private Vars" />
+            <marker date="1537205708716" expanded="true" signature="1143:1609" ph="Unity Methods" />
+            <marker date="1537205708716" expanded="true" signature="1179:1238" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="1256:1412" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="1439:1595" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="1613:2574" ph="Class Methods" />
+            <marker date="1537205708716" expanded="true" signature="1656:2118" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="1749:2115" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="1957:1979" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="2169:2560" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="2321:2465" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="2577:3036" ph="UI Methods" />
+            <marker date="1537205708716" expanded="true" signature="2635:2721" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="2766:2869" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="2915:3023" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="3039:3492" ph="Unity UI Inspector Events" />
+            <marker date="1537205708716" expanded="true" signature="3100:3244" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="3270:3374" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="3402:3479" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="3495:5042" ph="Handlers" />
+            <marker date="1537205708716" expanded="true" signature="3562:3604" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="3673:3757" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="3703:3754" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="3824:3908" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="3854:3905" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="3973:4051" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="4106:5029" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="4721:4867" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="5064:5301" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="5088:5140" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="5147:5298" ph="{...}" />
+            <marker date="1537205708716" expanded="true" signature="5244:5294" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/GameSparks/Platforms/PlatformBase.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
+        <state relative-caret-position="5339">
           <caret line="289" column="28" selection-start-line="289" selection-start-column="28" selection-end-line="289" selection-end-column="28" />
           <folding>
             <marker date="1536867239477" expanded="false" signature="6:196" ph="..." />
@@ -844,55 +1359,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/E7C4767F-FE1D-4AB3-85BE-5B03702DBADC/da/307d29d2/RTPacket.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/CrossPlatformInput/CrossPlatformInputGuidelines.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3">
-          <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        <state relative-caret-position="570">
+          <caret line="30" column="71" selection-start-line="30" selection-start-column="71" selection-end-line="30" selection-end-column="71" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/ThirdPersonCharacterGuidelines.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonUserControl.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="779">
+          <caret line="70" column="26" selection-start-line="70" selection-start-column="26" selection-end-line="70" selection-end-column="26" />
+          <folding>
+            <marker date="1520267503000" expanded="false" signature="6:78" ph="..." />
+            <marker date="1520267503000" expanded="true" signature="132:2800" ph="{...}" />
+            <marker date="1520267503000" expanded="true" signature="244:2798" ph="{...}" />
+            <marker date="1520267503000" expanded="true" signature="776:1493" ph="{...}" />
+            <marker date="1520267503000" expanded="true" signature="875:950" ph="{...}" />
+            <marker date="1520267503000" expanded="true" signature="967:1317" ph="{...}" />
+            <marker date="1520267503000" expanded="true" signature="1525:1672" ph="{...}" />
+            <marker date="1520267503000" expanded="true" signature="1560:1662" ph="{...}" />
+            <marker date="1520267503000" expanded="true" signature="1764:2792" ph="{...}" />
+            <marker date="1520267503000" expanded="true" signature="2085:2328" ph="{...}" />
+            <marker date="1520267503000" expanded="true" signature="2345:2517" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/PackagesOpCodes.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Code/MyGameSparksManager.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="79" column="43" selection-start-line="79" selection-start-column="43" selection-end-line="79" selection-end-column="43" />
+        <state relative-caret-position="384">
+          <caret line="153" column="41" selection-start-line="153" selection-start-column="41" selection-end-line="153" selection-end-column="41" />
           <folding>
-            <marker date="1537204485350" expanded="true" signature="6:219" ph="..." />
-            <marker date="1537204485350" expanded="true" signature="269:4711" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="511:672" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="541:570" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="577:651" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="688:752" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="756:2847" ph="Login &amp; Registration" />
-            <marker date="1537204485350" expanded="true" signature="928:1137" ph="/// Sends an authentication request or registration request to GS. ... " />
-            <marker date="1537204485350" expanded="true" signature="1258:2835" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="1382:1634" ph="/* this login method first attempts a registration ... */" />
-            <marker date="1537204485350" expanded="true" signature="1745:2830" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="1774:1947" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="2151:2643" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="2387:2633" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="2421:2521" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="2850:3685" ph="Matchmaking Request" />
-            <marker date="1537204485350" expanded="true" signature="2880:3084" ph="/// This will request a match between as many players you have set in the match. ... " />
-            <marker date="1537204485350" expanded="true" signature="3111:3672" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="3519:3667" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="3552:3662" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="3689:4709" ph="Realtime" />
-            <marker date="1537204485350" expanded="true" signature="3762:4289" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="4332:4341" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="4378:4495" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="4444:4492" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="4541:4599" ph="{...}" />
-            <marker date="1537204485350" expanded="true" signature="4642:4696" ph="{...}" />
+            <marker date="1537380008237" expanded="false" signature="6:219" ph="..." />
+            <marker date="1537380008237" expanded="true" signature="269:5501" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="556:717" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="586:615" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="622:696" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="733:852" ph="{...}" />
+            <marker date="1537380008237" expanded="false" signature="856:2947" ph="Login &amp; Registration" />
+            <marker date="1537380008237" expanded="true" signature="1028:1237" ph="/// Sends an authentication request or registration request to GS. ... " />
+            <marker date="1537380008237" expanded="true" signature="1358:2935" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="1482:1734" ph="/* this login method first attempts a registration ... */" />
+            <marker date="1537380008237" expanded="true" signature="1845:2930" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="1874:2047" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="2251:2743" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="2487:2733" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="2521:2621" ph="{...}" />
+            <marker date="1537380008237" expanded="false" signature="2950:3785" ph="Matchmaking Request" />
+            <marker date="1537380008237" expanded="true" signature="2980:3184" ph="/// This will request a match between as many players you have set in the match. ... " />
+            <marker date="1537380008237" expanded="true" signature="3211:3772" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="3619:3767" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="3652:3762" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="3789:5499" ph="Realtime" />
+            <marker date="1537380008237" expanded="true" signature="3862:4389" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="4432:5131" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="4467:4557" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="4630:5128" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="5168:5285" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="5234:5282" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="5331:5389" ph="{...}" />
+            <marker date="1537380008237" expanded="true" signature="5432:5486" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Standard Assets/Characters/ThirdPersonCharacter/Scripts/ThirdPersonCharacter.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="186" column="20" selection-start-line="186" selection-start-column="20" selection-end-line="186" selection-end-column="20" />
+          <folding>
+            <marker date="1520267758000" expanded="true" signature="72:7194" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="247:7192" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="1094:1514" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="1573:2383" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="1582:1736" ph="/* convert the world relative moveInput vector into a local-relative ... */" />
+            <marker date="1520267758000" expanded="true" signature="2120:2172" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="2180:2220" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="2430:3108" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="2465:2620" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="2628:3104" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="2944:2994" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="3147:3581" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="3219:3577" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="3535:3572" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="3619:4877" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="3919:3986" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="3991:4247" ph="/* calculate which leg is behind, so as to leave that leg trailing in the jump animation ... */" />
+            <marker date="1520267758000" expanded="true" signature="4462:4517" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="4522:4693" ph="/* the anim speed multiplier allows the overall speed of walking/running to be tweaked in the inspector, ... */" />
+            <marker date="1520267758000" expanded="true" signature="4736:4792" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="4800:4873" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="4911:5188" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="5244:5622" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="5394:5618" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="5655:5918" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="5951:6369" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="5959:6098" ph="/* we implement this function to override the default root motion. ... */" />
+            <marker date="1520267758000" expanded="true" signature="6141:6365" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="6398:7189" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="6662:6841" ph="/* 0.1f is a small offset to start the ray from inside the character ... */" />
+            <marker date="1520267758000" expanded="true" signature="6957:7068" ph="{...}" />
+            <marker date="1520267758000" expanded="true" signature="7076:7185" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Code/RTSession.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="38">
+        <state relative-caret-position="175">
           <caret line="35" column="30" selection-start-line="35" selection-start-column="30" selection-end-line="35" selection-end-column="30" />
           <folding>
-            <marker date="1537201119952" expanded="true" signature="6:64" ph="..." />
+            <marker date="1537201119952" expanded="false" signature="6:64" ph="..." />
             <marker date="1537201119952" expanded="true" signature="88:1617" ph="{...}" />
             <marker date="1537201119952" expanded="true" signature="329:495" ph="/// Creates a new RTSession object which is held until a new RT session is created ... " />
             <marker date="1537201119952" expanded="true" signature="543:913" ph="{...}" />
@@ -909,50 +1493,78 @@
     </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/79321FD2-AE8D-4D86-8C0D-2575F0D311F2/3f/a621aa0b/MatchFoundMessage.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
+        <state relative-caret-position="38">
           <caret line="22" column="5" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Code/LoginPanel.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Code/OpCodes.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="141" column="54" selection-start-line="141" selection-start-column="54" selection-end-line="141" selection-end-column="54" />
+        <state relative-caret-position="95">
+          <caret line="7" column="24" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
           <folding>
-            <marker date="1537205708716" expanded="false" signature="6:298" ph="..." />
-            <marker date="1537205708716" expanded="true" signature="339:5303" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="1072:1139" ph="Private Vars" />
-            <marker date="1537205708716" expanded="true" signature="1143:1609" ph="Unity Methods" />
-            <marker date="1537205708716" expanded="true" signature="1179:1238" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="1256:1412" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="1439:1595" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="1613:2574" ph="Class Methods" />
-            <marker date="1537205708716" expanded="true" signature="1656:2118" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="1749:2115" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="1957:1979" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="2169:2560" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="2321:2465" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="2577:3036" ph="UI Methods" />
-            <marker date="1537205708716" expanded="true" signature="2635:2721" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="2766:2869" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="2915:3023" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="3039:3492" ph="Unity UI Inspector Events" />
-            <marker date="1537205708716" expanded="true" signature="3100:3244" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="3270:3374" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="3402:3479" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="3495:5042" ph="Handlers" />
-            <marker date="1537205708716" expanded="true" signature="3562:3604" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="3673:3757" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="3703:3754" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="3824:3908" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="3854:3905" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="3973:4051" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="4106:5029" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="4721:4867" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="5064:5301" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="5088:5140" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="5147:5298" ph="{...}" />
-            <marker date="1537205708716" expanded="true" signature="5244:5294" ph="{...}" />
+            <marker date="1537379645648" expanded="false" signature="6:78" ph="..." />
+            <marker date="1537379645648" expanded="true" signature="99:217" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/PacketsProcessor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="209">
+          <caret line="14" column="8" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
+          <folding>
+            <marker date="1537379478245" expanded="false" signature="6:99" ph="..." />
+            <marker date="1537379478245" expanded="true" signature="146:459" ph="{...}" />
+            <marker date="1537379478245" expanded="true" signature="206:215" ph="{...}" />
+            <marker date="1537379478245" expanded="true" signature="263:272" ph="{...}" />
+            <marker date="1537379478245" expanded="true" signature="324:333" ph="{...}" />
+            <marker date="1537379478245" expanded="true" signature="387:396" ph="{...}" />
+            <marker date="1537379478245" expanded="true" signature="448:457" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/ObjectSpawner.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="5" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding>
+            <marker date="1537378757679" expanded="false" signature="6:78" ph="..." />
+            <marker date="1537378757679" expanded="true" signature="122:574" ph="{...}" />
+            <marker date="1537378757679" expanded="true" signature="278:315" ph="{...}" />
+            <marker date="1537378757679" expanded="true" signature="345:382" ph="{...}" />
+            <marker date="1537378757679" expanded="true" signature="444:572" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/Survivor.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="190">
+          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
+          <folding>
+            <marker date="1537380588221" expanded="false" signature="6:78" ph="..." />
+            <marker date="1537380588221" expanded="true" signature="117:322" ph="{...}" />
+            <marker date="1537380588221" expanded="true" signature="262:320" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Code/GameController.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="171">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <marker date="1537381804758" expanded="false" signature="6:78" ph="..." />
+            <marker date="1537381804758" expanded="true" signature="124:734" ph="{...}" />
+            <marker date="1537381804758" expanded="true" signature="250:409" ph="Unity" />
+            <marker date="1537381804758" expanded="true" signature="286:311" ph="{...}" />
+            <marker date="1537381804758" expanded="true" signature="334:343" ph="{...}" />
+            <marker date="1537381804758" expanded="true" signature="370:395" ph="{...}" />
+            <marker date="1537381804758" expanded="true" signature="413:732" ph="Public Interface" />
+            <marker date="1537381804758" expanded="true" signature="487:718" ph="{...}" />
+            <marker date="1537381804758" expanded="true" signature="493:715" ph="/* TODO: Use ObjectSpawner to create the player ... */" />
           </folding>
         </state>
       </provider>

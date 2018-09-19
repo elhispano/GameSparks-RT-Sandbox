@@ -1,0 +1,178 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!319 &31900000
+AvatarMask:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Shooting Avatar Mask
+  m_Mask: 00000000010000000100000000000000000000000100000001000000010000000100000000000000000000000100000001000000
+  m_Elements:
+  - m_Path: 
+    m_Weight: 1
+  - m_Path: EthanBody
+    m_Weight: 1
+  - m_Path: EthanGlasses
+    m_Weight: 1
+  - m_Path: EthanSkeleton
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanLeftUpLeg
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanLeftUpLeg/EthanLeftLeg
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanLeftUpLeg/EthanLeftLeg/EthanLeftFoot
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanLeftUpLeg/EthanLeftLeg/EthanLeftFoot/EthanLeftToe1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanLeftUpLeg/EthanLeftLeg/EthanLeftFoot/EthanLeftToe1/EthanLeftToe2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanRightUpLeg
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanRightUpLeg/EthanRightLeg
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanRightUpLeg/EthanRightLeg/EthanRightFoot
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanRightUpLeg/EthanRightLeg/EthanRightFoot/EthanRightToe1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanRightUpLeg/EthanRightLeg/EthanRightFoot/EthanRightToe1/EthanRightToe2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanHead1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanHead1/EthanLeftCorner
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanHead1/EthanLeftUpperLip
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanHead1/EthanRightCorner
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanHead1/EthanRightUpperLip
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanHead1/EthanUpperLip
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanJaw
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanJaw/EthanLeftLowerLip
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanJaw/EthanLowerLip
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanJaw/EthanRightLowerLip
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanLeftBlink
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanLeftBrow
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanLeftEye
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanRightBlink
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanRightBrow
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanHead/EthanRightEye
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandIndex1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandIndex1/EthanLeftHandIndex2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandIndex1/EthanLeftHandIndex2/EthanLeftHandIndex3
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandIndex1/EthanLeftHandIndex2/EthanLeftHandIndex3/EthanLeftHandIndex4
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandMiddle1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandMiddle1/EthanLeftHandMiddle2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandMiddle1/EthanLeftHandMiddle2/EthanLeftHandMiddle3
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandMiddle1/EthanLeftHandMiddle2/EthanLeftHandMiddle3/EthanLeftHandMiddle4
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandPinky1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandPinky1/EthanLeftHandPinky2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandPinky1/EthanLeftHandPinky2/EthanLeftHandPinky3
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandPinky1/EthanLeftHandPinky2/EthanLeftHandPinky3/EthanLeftHandPinky4
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandRing1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandRing1/EthanLeftHandRing2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandRing1/EthanLeftHandRing2/EthanLeftHandRing3
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandRing1/EthanLeftHandRing2/EthanLeftHandRing3/EthanLeftHandRing4
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandThumb1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandThumb1/EthanLeftHandThumb2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandThumb1/EthanLeftHandThumb2/EthanLeftHandThumb3
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanLeftShoulder/EthanLeftArm/EthanLeftForeArm/EthanLeftHand/EthanLeftHandThumb1/EthanLeftHandThumb2/EthanLeftHandThumb3/EthanLeftHandThumb4
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandIndex1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandIndex1/EthanRightHandIndex2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandIndex1/EthanRightHandIndex2/EthanRightHandIndex3
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandIndex1/EthanRightHandIndex2/EthanRightHandIndex3/EthanRightHandIndex4
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandMiddle1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandMiddle1/EthanRightHandMiddle2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandMiddle1/EthanRightHandMiddle2/EthanRightHandMiddle3
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandMiddle1/EthanRightHandMiddle2/EthanRightHandMiddle3/EthanRightHandMiddle4
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandPinky1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandPinky1/EthanRightHandPinky2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandPinky1/EthanRightHandPinky2/EthanRightHandPinky3
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandPinky1/EthanRightHandPinky2/EthanRightHandPinky3/EthanRightHandPinky4
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandRing1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandRing1/EthanRightHandRing2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandRing1/EthanRightHandRing2/EthanRightHandRing3
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandRing1/EthanRightHandRing2/EthanRightHandRing3/EthanRightHandRing4
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandThumb1
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandThumb1/EthanRightHandThumb2
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandThumb1/EthanRightHandThumb2/EthanRightHandThumb3
+    m_Weight: 1
+  - m_Path: EthanSkeleton/EthanHips/EthanSpine/EthanSpine1/EthanSpine2/EthanNeck/EthanRightShoulder/EthanRightArm/EthanRightForeArm/EthanRightHand/EthanRightHandThumb1/EthanRightHandThumb2/EthanRightHandThumb3/EthanRightHandThumb4
+    m_Weight: 1

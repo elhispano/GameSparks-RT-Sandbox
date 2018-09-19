@@ -17,6 +17,8 @@ public class MyGameSparksManager : MonoBehaviour
 
 	private RTSession m_RTSession;
 
+	private PacketsProcessor packetsProcessor;
+
 	public static MyGameSparksManager Instance()
 	{
 		
@@ -34,6 +36,7 @@ public class MyGameSparksManager : MonoBehaviour
 	
 	void Awake()
 	{
+		packetsProcessor = GetComponent<PacketsProcessor>();
 		instance = this; 
 		DontDestroyOnLoad(this.gameObject);
 	}
@@ -139,7 +142,31 @@ public class MyGameSparksManager : MonoBehaviour
 
 	private void OnPacket(RTPacket rtPacket)
 	{
-		
+		if (packetsProcessor == null)
+		{
+			Debug.LogErrorFormat("[ERROR] Missing PacketsProcessor component");
+			return;
+		}
+
+		OpCodes opCodeType = (OpCodes) rtPacket.OpCode;
+		switch (opCodeType)
+		{
+			case OpCodes.PlayerTransform:
+				packetsProcessor.UpdateOtherPlayerTransforms(rtPacket);
+			break;
+			case OpCodes.PlayerShoot:
+				packetsProcessor.OtherPlayerShoot(rtPacket);
+			break;
+			case OpCodes.UpdatePlayerShoots:
+				packetsProcessor.UpdateOpponentShoots(rtPacket);
+			break;
+			case OpCodes.RegisterShootHit:
+				packetsProcessor.RegisterOtherPlayerHit(rtPacket);
+			break;
+			default:
+				Debug.LogErrorFormat("[ERROR] Unrecognized OpCode: {0} ",rtPacket.OpCode);
+			break;
+		}
 	}
 
 	private void OnReady(bool isReady)
