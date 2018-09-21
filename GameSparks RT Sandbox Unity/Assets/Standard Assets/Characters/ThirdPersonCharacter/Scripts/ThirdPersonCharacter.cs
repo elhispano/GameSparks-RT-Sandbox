@@ -7,6 +7,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 	[RequireComponent(typeof(Animator))]
 	public class ThirdPersonCharacter : MonoBehaviour
 	{
+		[SerializeField] private bool m_rootMotion = true;
 		[SerializeField] float m_MovingTurnSpeed = 360;
 		[SerializeField] float m_StationaryTurnSpeed = 180;
 		[SerializeField] float m_JumpPower = 12f;
@@ -15,6 +16,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		[SerializeField] float m_MoveSpeedMultiplier = 1f;
 		[SerializeField] float m_AnimSpeedMultiplier = 1f;
 		[SerializeField] float m_GroundCheckDistance = 0.1f;
+		
+		[SerializeField]
+		private LayerMask m_collisionLayerMask;
 
 		Rigidbody m_Rigidbody;
 		Animator m_Animator;
@@ -29,8 +33,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 		CapsuleCollider m_Capsule;
 		bool m_Crouching;
 
-
-		void Start()
+		private void Awake()
 		{
 			m_Animator = GetComponent<Animator>();
 			m_Rigidbody = GetComponent<Rigidbody>();
@@ -89,11 +92,20 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			{
 				Ray crouchRay = new Ray(m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half, Vector3.up);
 				float crouchRayLength = m_CapsuleHeight - m_Capsule.radius * k_Half;
-				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
+				
+				RaycastHit hitInfo = new RaycastHit();
+				if (Physics.SphereCast(crouchRay,
+					m_Capsule.radius * k_Half,
+					out hitInfo,
+					crouchRayLength,
+					m_collisionLayerMask,
+					QueryTriggerInteraction.Ignore))
 				{
+					Debug.Log(hitInfo.transform.name);
 					m_Crouching = true;
 					return;
 				}
+				
 				m_Capsule.height = m_CapsuleHeight;
 				m_Capsule.center = m_CapsuleCenter;
 				m_Crouching = false;
@@ -107,7 +119,7 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 			{
 				Ray crouchRay = new Ray(m_Rigidbody.position + Vector3.up * m_Capsule.radius * k_Half, Vector3.up);
 				float crouchRayLength = m_CapsuleHeight - m_Capsule.radius * k_Half;
-				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, Physics.AllLayers, QueryTriggerInteraction.Ignore))
+				if (Physics.SphereCast(crouchRay, m_Capsule.radius * k_Half, crouchRayLength, m_collisionLayerMask, QueryTriggerInteraction.Ignore))
 				{
 					m_Crouching = true;
 				}
@@ -186,6 +198,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 
 		public void OnAnimatorMove()
 		{
+			if (!m_rootMotion)
+			{
+				return;
+			}
+			
 			// we implement this function to override the default root motion.
 			// this allows us to modify the positional speed before it's applied.
 			if (m_IsGrounded && Time.deltaTime > 0)
@@ -220,6 +237,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_GroundNormal = Vector3.up;
 				m_Animator.applyRootMotion = false;
 			}
+		}
+
+		public void ToggleRootMotion(bool toggle)
+		{
+			m_rootMotion = toggle;
 		}
 	}
 }

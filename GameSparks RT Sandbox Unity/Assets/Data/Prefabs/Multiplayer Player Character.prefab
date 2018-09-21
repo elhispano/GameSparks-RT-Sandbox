@@ -730,6 +730,8 @@ GameObject:
   - component: {fileID: 136679333974196714}
   - component: {fileID: 114541722571593734}
   - component: {fileID: 114885066609417276}
+  - component: {fileID: 114739271043704638}
+  - component: {fileID: 114808676100813108}
   m_Layer: 0
   m_Name: Multiplayer Player Character
   m_TagString: Untagged
@@ -2497,6 +2499,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 521b611700410be45810047f0a74e899, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114739271043704638
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480164883620540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e746a28752ac26c408aaf447d9aaa96d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114808676100813108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1480164883620540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c818e76e0f9c805428ea95252707992c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  testMovemenetEnabled: 0
+  movementTest: {x: 0, y: 0, z: 0}
 --- !u!114 &114885066609417276
 MonoBehaviour:
   m_ObjectHideFlags: 1

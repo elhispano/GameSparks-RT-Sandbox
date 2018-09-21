@@ -15,7 +15,7 @@ public class MyGameSparksManager : MonoBehaviour
 
 	private GameSparksRTUnity gameSparksRTUnity;
 
-	private RTSession m_RTSession;
+	private RTSessionInfo m_rtSessionInfo;
 
 	private PacketsProcessor packetsProcessor;
 
@@ -33,6 +33,8 @@ public class MyGameSparksManager : MonoBehaviour
 		
 		return null;
 	}
+	
+	public static bool Online { get; private set; }
 	
 	void Awake()
 	{
@@ -118,15 +120,25 @@ public class MyGameSparksManager : MonoBehaviour
 	
 	#region Realtime
 
-	public void StartNewRealTimeSession(RTSession session)
+	public RTSessionInfo GetRTSessionInfo()
 	{
-		m_RTSession = session;
+		return m_rtSessionInfo;
+	}
+	
+	public GameSparksRTUnity GetRTUnitySession()
+	{
+		return gameSparksRTUnity;
+	}
+
+	public void StartNewRealTimeSession(RTSessionInfo sessionInfo)
+	{
+		m_rtSessionInfo = sessionInfo;
 		gameSparksRTUnity = gameObject.AddComponent<GameSparksRTUnity>();
 
 		GSRequestData mockedResponse = new GSRequestData()
-			.AddNumber("port", (double) session.GetPortId())
-			.AddString("host", session.GetHostUrl())
-			.AddString("accessToken", session.GetAccessToken());
+			.AddNumber("port", (double) sessionInfo.GetPortId())
+			.AddString("host", sessionInfo.GetHostUrl())
+			.AddString("accessToken", sessionInfo.GetAccessToken());
 		
 		FindMatchResponse response = new FindMatchResponse(mockedResponse);
 		
@@ -175,6 +187,7 @@ public class MyGameSparksManager : MonoBehaviour
 
 		if (isReady)
 		{
+			Online = true;
 			SceneManager.LoadScene("GameScene");
 		}
 	}

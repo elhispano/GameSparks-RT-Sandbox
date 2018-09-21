@@ -9,13 +9,13 @@
             IRTCommand. THe interface that objects returned from OnCustom need to implement.
             Code within OnCustom runs in a background Thread, so for Engines like unity UI updates 
             cannot be performed in this method. 
-            These returned objects are executed on calls to IRTSession.Update(), and are executed on the thread that calls this method.
+            These returned objects are executed on calls to IRTSessionInfo.Update(), and are executed on the thread that calls this method.
             This pattern allows you to run code in both the background, and foreground threads when a custom message is received
             </summary>
         </member>
         <member name="M:GameSparks.RT.IRTCommand.Execute">
             <summary>
-            Execute this instance. Executed on calls to IRTSession.Update()
+            Execute this instance. Executed on calls to IRTSessionInfo.Update()
             </summary>
         </member>
         <member name="M:Com.Gamesparks.Realtime.Proto.LoginCommand.Serialize(System.IO.Stream,Com.Gamesparks.Realtime.Proto.LoginCommand)">
@@ -58,9 +58,9 @@
         </member>
         <member name="M:GameSparks.RT.GameSparksRT.GetSession(System.String,System.String,System.Int32,System.Int32,System.Boolean)">
             <summary>
-            Get a session instance
+            Get a sessionInfo instance
             </summary>
-            <returns>The session.</returns>
+            <returns>The sessionInfo.</returns>
             <param name="connectToken">A Connect token as recieved from the GameSparks SDK</param>
             <param name="hostName">Host name.</param>
             <param name="tcpPort">TCP port.</param>
@@ -161,23 +161,23 @@
             Send over UDP, discard out of sequence packets
             </summary>
         </member>
-        <member name="T:GameSparks.RT.IRTSession">
+        <member name="T:GameSparks.RT.IRTSessionInfo">
             <summary>
-            The realtime session interface. An instance if this interface can be obtainedfrom RTSessionFactory
-            Each realtime session will have a single instance of this interface.
+            The realtime sessionInfo interface. An instance if this interface can be obtainedfrom RTSessionInfoFactory
+            Each realtime sessionInfo will have a single instance of this interface.
             </summary>
         </member>
-        <member name="M:GameSparks.RT.IRTSession.Start">
+        <member name="M:GameSparks.RT.IRTSessionInfo.Start">
             <summary>
-            Starts the session and connects to the real time services.
+            Starts the sessionInfo and connects to the real time services.
             </summary>
         </member>
-        <member name="M:GameSparks.RT.IRTSession.Stop">
+        <member name="M:GameSparks.RT.IRTSessionInfo.Stop">
             <summary>
-            Starts the session and disconnects from the real time services.
+            Starts the sessionInfo and disconnects from the real time services.
             </summary>
         </member>
-        <member name="M:GameSparks.RT.IRTSession.SendData(System.Int32,GameSparks.RT.GameSparksRT.DeliveryIntent,System.Byte[],GameSparks.RT.RTData,System.Int32[])">
+        <member name="M:GameSparks.RT.IRTSessionInfo.SendData(System.Int32,GameSparks.RT.GameSparksRT.DeliveryIntent,System.Byte[],GameSparks.RT.RTData,System.Int32[])">
             <summary>
             Sends a message to other players
             </summary>
@@ -187,7 +187,7 @@
             <param name="data">The RTData object to send</param>
             <param name="targetPlayers">The list of players to send to (empty to send to all)</param>
         </member>
-        <member name="M:GameSparks.RT.IRTSession.SendRTData(System.Int32,GameSparks.RT.GameSparksRT.DeliveryIntent,GameSparks.RT.RTData,System.Int32[])">
+        <member name="M:GameSparks.RT.IRTSessionInfo.SendRTData(System.Int32,GameSparks.RT.GameSparksRT.DeliveryIntent,GameSparks.RT.RTData,System.Int32[])">
             <summary>
             Sends a strucured message to other players
             </summary>
@@ -196,7 +196,7 @@
             <param name="data">The RTData object to send</param>
             <param name="targetPlayers">The list of players to send to (empty to send to all)</param>
         </member>
-        <member name="M:GameSparks.RT.IRTSession.SendBytes(System.Int32,GameSparks.RT.GameSparksRT.DeliveryIntent,System.ArraySegment{System.Byte},System.Int32[])">
+        <member name="M:GameSparks.RT.IRTSessionInfo.SendBytes(System.Int32,GameSparks.RT.GameSparksRT.DeliveryIntent,System.ArraySegment{System.Byte},System.Int32[])">
             <summary>
             Sends a byte[] to other players
             </summary>
@@ -205,7 +205,7 @@
             <param name="payload">bytes to send, as an ArraySegment<c> struct</c></param>
             <param name="targetPlayers">The list of players to send to (empty to send to all)</param>
         </member>
-        <member name="M:GameSparks.RT.IRTSession.SendRTDataAndBytes(System.Int32,GameSparks.RT.GameSparksRT.DeliveryIntent,System.Nullable{System.ArraySegment{System.Byte}},GameSparks.RT.RTData,System.Int32[])">
+        <member name="M:GameSparks.RT.IRTSessionInfo.SendRTDataAndBytes(System.Int32,GameSparks.RT.GameSparksRT.DeliveryIntent,System.Nullable{System.ArraySegment{System.Byte}},GameSparks.RT.RTData,System.Int32[])">
             <summary>
             Sends both RTData and bytes to other players
             </summary>
@@ -214,57 +214,57 @@
             <param name="payload">bytes to send, as an ArraySegment<c> struct</c></param>
             <param name="targetPlayers">The list of players to send to (empty to send to all)</param>
         </member>
-        <member name="M:GameSparks.RT.IRTSession.Update">
+        <member name="M:GameSparks.RT.IRTSessionInfo.Update">
             <summary>
             This method should be called as frequently as possible by the thread you want
             Your callbacks to execute on. In unity, you should call this from an Update 
             method in a MonoBehaviour
             </summary>
         </member>
-        <member name="P:GameSparks.RT.IRTSession.SessionListener">
+        <member name="P:GameSparks.RT.IRTSessionInfo.SessionListener">
             <summary>
-            The user supplied session listener.
+            The user supplied sessionInfo listener.
             </summary>
         </member>
-        <member name="P:GameSparks.RT.IRTSession.PeerId">
+        <member name="P:GameSparks.RT.IRTSessionInfo.PeerId">
             <summary>
             The peerId of the current player.
             </summary>
         </member>
-        <member name="P:GameSparks.RT.IRTSession.Ready">
+        <member name="P:GameSparks.RT.IRTSessionInfo.Ready">
             <summary>
             Indicates if the SDK is Ready and connected
             </summary>
         </member>
-        <member name="P:GameSparks.RT.IRTSession.ActivePeers">
+        <member name="P:GameSparks.RT.IRTSessionInfo.ActivePeers">
             <summary>
             The list of peers who are currently connected.
             </summary>
         </member>
-        <member name="P:GameSparks.RT.IRTSession.ConnectState">
+        <member name="P:GameSparks.RT.IRTSessionInfo.ConnectState">
             <summary>
-            The connection state of the session.
+            The connection state of the sessionInfo.
             </summary>
         </member>
-        <member name="M:GameSparks.RT.IRTSessionListener.OnPlayerConnect(System.Int32)">
+        <member name="M:GameSparks.RT.IRTSessionInfoListener.OnPlayerConnect(System.Int32)">
             <summary>
             Executed when another player joins the room.
             </summary>
             <param name="peerId">The player who has just joined</param>
         </member>
-        <member name="M:GameSparks.RT.IRTSessionListener.OnPlayerDisconnect(System.Int32)">
+        <member name="M:GameSparks.RT.IRTSessionInfoListener.OnPlayerDisconnect(System.Int32)">
             <summary>
             Executed when another player leaves the room.
             </summary>
             <param name="peerId">The player who has just left</param>
         </member>
-        <member name="M:GameSparks.RT.IRTSessionListener.OnReady(System.Boolean)">
+        <member name="M:GameSparks.RT.IRTSessionInfoListener.OnReady(System.Boolean)">
             <summary>
             Executed when the SDK moves between a ready and non ready state
             </summary>
             <param name="ready">Whether the SDK is in a ready state (or not)</param>
         </member>
-        <member name="M:GameSparks.RT.IRTSessionListener.OnPacket(GameSparks.RT.RTPacket)">
+        <member name="M:GameSparks.RT.IRTSessionInfoListener.OnPacket(GameSparks.RT.RTPacket)">
             <summary>
             Executed when the SDK recieves a message from another player via SendPacket
             </summary>

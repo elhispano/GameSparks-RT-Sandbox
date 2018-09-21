@@ -11,14 +11,18 @@
       <e p="Assets" t="Include">
         <e p="Code" t="Include">
           <e p="CodeConventionForUnity.cs" t="Include" />
+          <e p="DebugOnlinePlayerTool.cs" t="Include" />
           <e p="GameController.cs" t="Include" />
           <e p="GeneralMenuItems.cs" t="Include" />
           <e p="LoginPanel.cs" t="Include" />
           <e p="MyGameSparksManager.cs" t="Include" />
           <e p="ObjectSpawner.cs" t="Include" />
           <e p="OpCodes.cs" t="Include" />
+          <e p="PacketsFactory.cs" t="Include" />
           <e p="PacketsProcessor.cs" t="Include" />
-          <e p="RTSession.cs" t="Include" />
+          <e p="RTPlayersDebugTools.cs" t="Include" />
+          <e p="RTSessionInfo.cs" t="Include" />
+          <e p="RTUserControl.cs" t="Include" />
           <e p="Survivor.cs" t="Include" />
         </e>
         <e p="GameSparks" t="Include">

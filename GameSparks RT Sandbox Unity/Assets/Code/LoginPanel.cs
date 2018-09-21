@@ -53,7 +53,7 @@ public class LoginPanel : MonoBehaviour
 	
 	#region Private Vars
 
-	private RTSession m_rtSession;
+	private RTSessionInfo m_rtSessionInfo;
 	
 	#endregion
 	
@@ -162,7 +162,7 @@ public class LoginPanel : MonoBehaviour
 	
 	public void StartMatch()
 	{
-		MyGameSparksManager.Instance().StartNewRealTimeSession(m_rtSession);
+		MyGameSparksManager.Instance().StartNewRealTimeSession(m_rtSessionInfo);
 	}
 
 	#endregion
@@ -214,7 +214,7 @@ public class LoginPanel : MonoBehaviour
 		}
 		m_playerList.text = sBuilder.ToString (); // set the string to be the player-list field
 		
-		m_rtSession = new RTSession(message);
+		m_rtSessionInfo = new RTSessionInfo(message,GS.GSPlatform.UserId);
 		ToggleStartMatch(true);
 	}
 
