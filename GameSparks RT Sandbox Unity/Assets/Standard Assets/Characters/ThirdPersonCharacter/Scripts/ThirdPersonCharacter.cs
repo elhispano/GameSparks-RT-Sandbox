@@ -101,7 +101,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 					m_collisionLayerMask,
 					QueryTriggerInteraction.Ignore))
 				{
-					Debug.Log(hitInfo.transform.name);
 					m_Crouching = true;
 					return;
 				}
@@ -163,7 +162,6 @@ namespace UnityStandardAssets.Characters.ThirdPerson
 				m_Animator.speed = 1;
 			}
 		}
-
 
 		void HandleAirborneMovement()
 		{

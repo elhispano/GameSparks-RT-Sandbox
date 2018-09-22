@@ -88,6 +88,9 @@ namespace UnityStandardAssets.Characters.ThirdPerson
             // pass all parameters to the character control script
             m_Character.Move(m_Move, m_Crouch, m_Jump);
             m_Jump = false;
+            
+            m_Character.GetComponent<Animator>().Update(Time.deltaTime);
+            Physics.Simulate(Time.fixedDeltaTime);
         }
     }
 }

@@ -22,7 +22,8 @@ public class PacketsProcessor : MonoBehaviour
 		Survivor survivor = gameController.SearchSurvivor(packet.Sender);
 		if (survivor != null)
 		{
-			survivor.RTUserControl.SetMovement(position,rotation,velocity,inputMovement,jump,crouch);
+			long latency = RTClock.Instance.Latency;
+			survivor.RTUserControl.SetMovement(position,rotation,velocity,inputMovement,jump,crouch,latency);
 		}
 	}
 

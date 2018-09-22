@@ -8,13 +8,14 @@ Material:
   m_PrefabInternal: {fileID: 0}
   m_Name: EthanGrey
   m_Shader: {fileID: 45, guid: 0000000000000000f000000000000000, type: 0}
-  m_ShaderKeywords: _EMISSION _LIGHTMAPPING_STATIC_LIGHTMAPS _NORMALMAP _UVPRIM_UV1
-    _UVSEC_UV1
+  m_ShaderKeywords: _ALPHAPREMULTIPLY_ON _EMISSION _LIGHTMAPPING_STATIC_LIGHTMAPS
+    _NORMALMAP _UVPRIM_UV1 _UVSEC_UV1
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
   m_DoubleSidedGI: 0
-  m_CustomRenderQueue: -1
-  stringTagMap: {}
+  m_CustomRenderQueue: 3000
+  stringTagMap:
+    RenderType: Transparent
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
@@ -70,14 +71,14 @@ Material:
     - _DetailAlbedoMultiplier: 2
     - _DetailMode: 0
     - _DetailNormalMapScale: 1
-    - _DstBlend: 0
+    - _DstBlend: 10
     - _EmissionScale: 1
     - _EmissionScaleUI: 1
     - _GlossMapScale: 1
     - _Glossiness: 0.4
     - _GlossyReflections: 1
     - _Lightmapping: 0
-    - _Mode: 0
+    - _Mode: 3
     - _OcclusionStrength: 1
     - _Parallax: 0.02
     - _Shininess: 0.41313845
@@ -86,7 +87,7 @@ Material:
     - _SrcBlend: 1
     - _UVPrim: 0
     - _UVSec: 0
-    - _ZWrite: 1
+    - _ZWrite: 0
     m_Colors:
     - _Color: {r: 0.49803922, g: 0.49803922, b: 0.49803922, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 0.99999994}

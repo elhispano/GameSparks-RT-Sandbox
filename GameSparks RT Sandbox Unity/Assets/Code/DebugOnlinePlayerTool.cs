@@ -24,7 +24,9 @@ public class DebugOnlinePlayerTool : MonoBehaviour
 				if (survivor.IsPlayer)
 				{
 					survivor.SetDebugOnlinePlayer(this);
-					m_debugSurvivor = GameController.Instance.CreateAndSetupPlayer(1,"DebugPlayer",false,Color.cyan);
+					Color ghostColor = Color.cyan;
+					ghostColor.a = 0.3f;
+					m_debugSurvivor = GameController.Instance.CreateAndSetupPlayer(1,"DebugPlayer",false,ghostColor);
 					m_debugOnlinePlayerSetup = true;
 					break;
 				}
@@ -49,6 +51,6 @@ public class DebugOnlinePlayerTool : MonoBehaviour
 		yield return new WaitForSeconds(m_constantLagInMs / 1000f);
 		
 		var rtUserControl = m_debugSurvivor.GetComponent<RTUserControl>();
-		rtUserControl.SetMovement(position,rotation,velocity,inputMovement,jump,crouch);
+		rtUserControl.SetMovement(position,rotation,velocity,inputMovement,jump,crouch,m_constantLagInMs);
 	}
 }

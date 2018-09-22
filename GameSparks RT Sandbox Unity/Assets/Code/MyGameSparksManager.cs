@@ -175,6 +175,18 @@ public class MyGameSparksManager : MonoBehaviour
 			case OpCodes.RegisterShootHit:
 				packetsProcessor.RegisterOtherPlayerHit(rtPacket);
 			break;
+			case OpCodes.AllPlayersConnected:
+				AllPlayersConnected();
+				break;
+			case OpCodes.TimeStamp:
+				RTClock.Instance.ProcessTimeStampPacket(rtPacket);
+				break;
+			case OpCodes.Countdown:
+				if (RTClock.Instance != null)
+				{
+					RTClock.Instance.SyncClock(rtPacket);					
+				}
+				break;
 			default:
 				Debug.LogErrorFormat("[ERROR] Unrecognized OpCode: {0} ",rtPacket.OpCode);
 			break;
@@ -185,11 +197,11 @@ public class MyGameSparksManager : MonoBehaviour
 	{
 		Debug.Log ("GSM| Player IsReady, "+isReady);
 
-		if (isReady)
+		/*if (isReady)
 		{
 			Online = true;
 			SceneManager.LoadScene("GameScene");
-		}
+		}*/
 	}
 
 	private void OnPlayerDisconnect(int peerId)
@@ -200,6 +212,14 @@ public class MyGameSparksManager : MonoBehaviour
 	private void OnPlayerConnect(int peerId)
 	{
 		Debug.Log ("GSM| Player Connected, "+peerId);
+	}
+
+	private void AllPlayersConnected()
+	{
+		Debug.Log("GSM| ALL players connected");
+		
+		Online = true;
+		SceneManager.LoadScene("GameScene");
 	}
 
 	#endregion

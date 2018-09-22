@@ -8,10 +8,9 @@ public class RTPlayersDebugTools : MonoBehaviour
 {
 	[SerializeField] private GameObject m_serverPositionDebugPrefab = null;
 	
-	[SerializeField]
-	private List<GameObject> m_serverPositionDebugInstances = new List<GameObject>();
-	
 	private GameController m_gameController;
+	
+	private Dictionary<Survivor,GameObject> debugObjects = new Dictionary<Survivor, GameObject>();
 
 	private void Awake()
 	{
@@ -39,14 +38,14 @@ public class RTPlayersDebugTools : MonoBehaviour
 
 			if (!survivor.IsPlayer)
 			{
-				if (m_serverPositionDebugInstances.Count <= i-1)
+				if (!debugObjects.ContainsKey(survivor))
 				{
-					m_serverPositionDebugInstances.Add(Instantiate<GameObject>(m_serverPositionDebugPrefab));
+					debugObjects.Add(survivor,Instantiate<GameObject>(m_serverPositionDebugPrefab));
 				}
 				
 				RTUserControl userControl = survivor.GetComponent<RTUserControl>();
-				m_serverPositionDebugInstances[i-1].transform.position = userControl.DesiredPosition;
-				m_serverPositionDebugInstances[i-1].transform.rotation = userControl.DesiredRotation;
+				debugObjects[survivor].transform.position = userControl.DesiredPosition;
+				debugObjects[survivor].transform.rotation = userControl.DesiredRotation;
 			}
 		}
 	}

@@ -20,6 +20,7 @@
           <e p="OpCodes.cs" t="Include" />
           <e p="PacketsFactory.cs" t="Include" />
           <e p="PacketsProcessor.cs" t="Include" />
+          <e p="RTClock.cs" t="Include" />
           <e p="RTPlayersDebugTools.cs" t="Include" />
           <e p="RTSessionInfo.cs" t="Include" />
           <e p="RTUserControl.cs" t="Include" />
